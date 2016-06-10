@@ -11,7 +11,7 @@ public class ReadJSON {
 
 	public static void main(String[] args) {
 		try {
-			JsonParser parser = new JsonParser();//´´½¨JSON½âÎöÆ÷
+			JsonParser parser = new JsonParser();//åˆ›å»ºJSONè§£æå™¨
 			JsonObject object = (JsonObject) parser.parse(new FileReader("test.json"));
 			System.out.println("cat=" + object.get("cat").getAsString());
 			System.out.println("pop=" + object.get("pop").getAsBoolean());
